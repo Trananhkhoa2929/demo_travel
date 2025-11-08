@@ -24,6 +24,15 @@ SOURCE CODE:
      * copy API Key lấy được từ bước 4 trong database vào FIREBASE_API_KEY
      * các chỗ firebase.json, đổi tên file your_firebase_key.json cho trùng khớp với các chỗ
    + cell 5 khởi động streamlit, nhấp url đích dẫn tới trang streamlit và test
-     
 
+<br>
+
+Giải Thích:
+cell 1: tải và cài đặt ollama, streamlit, firebase_admin
+<br>
+cell 2: khởi động ollama ở chế độ nền
+<br>
+cell 3: tải mô hình ngôn ngữ mistral, cloudflare tunnel và xuất ra URL trỏ đến máy chủ Ollama ( có phần test để kiểm tra có lỗi khi kết nối không)
+cell 4: source code của web: giao diện (streamlit), user authentication hàm, hàm tạo lịch trình, hàm lưu lịch sử (firebase)
+cell 5: khởi chạy streamlit và xuất ra URL (tunnel cho web streamlit)
 
