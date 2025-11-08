@@ -1,19 +1,20 @@
 # Hướng dẫn cách chạy
+<br><br>
 DATABASE:
 1) truy cập firebase console -> tạo project mới
 2) vào Authentication, add email/password và xác nhận
 3) vào firestore database -> tạo database -> tạo index với 2 path fields là UserId (ascending) và Timestamp (decending)
 4) vào project settings -> add web -> lấy mã api key -> chuyển mục service accounts generate new private key( chọn Python) trong Admin SDK configuration snippet
    -> được file your_firebase_key.json và mã API Key
-   <br>
 
+<br><br>
 COLAB:
 1) tạo tài khoản colab 
 2) mở notebook là file notebook jupiter (source code)
 3) chuyển Runtime type sang gpu
 4) upload your_firebase_key.json vào notebook
-   <br>
-   
+
+<br><br>   
 SOURCE CODE:
 1) chạy lần lượt các cell:
    + cell 1 để install các công cụ cần thiết
@@ -25,14 +26,15 @@ SOURCE CODE:
      * các chỗ firebase.json, đổi tên file your_firebase_key.json cho trùng khớp với các chỗ
    + cell 5 khởi động streamlit, nhấp url đích dẫn tới trang streamlit và test
 
-<br>
-
+<br><br>
 Giải Thích:
 cell 1: tải và cài đặt ollama, streamlit, firebase_admin
 <br>
 cell 2: khởi động ollama ở chế độ nền
 <br>
 cell 3: tải mô hình ngôn ngữ mistral, cloudflare tunnel và xuất ra URL trỏ đến máy chủ Ollama ( có phần test để kiểm tra có lỗi khi kết nối không)
+<br>
 cell 4: source code của web: giao diện (streamlit), user authentication hàm, hàm tạo lịch trình, hàm lưu lịch sử (firebase)
+<br>
 cell 5: khởi chạy streamlit và xuất ra URL (tunnel cho web streamlit)
 
